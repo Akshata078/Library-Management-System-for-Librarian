@@ -5,6 +5,10 @@ app_description = "A web based system for managing books, members and transactio
 app_email = "akshata23@navgurukul.org"
 app_license = "mit"
 
+override_whitelisted_methods = {
+    "library_management_system.library_management_system.api.import_books.import_books": "library_management_system.library_management_system.api.import_books.import_books"
+}
+
 # Apps
 # ------------------
 
@@ -245,3 +249,6 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+doctype_list_js = {
+    "Book": "public/js/book_list.js"
+}
